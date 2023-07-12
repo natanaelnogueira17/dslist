@@ -8,6 +8,7 @@ import org.springframework.data.jpa.repository.Query;
 import com.treinamento.entitys.Game;
 import com.treinamento.projection.GameminProjection;
 
+
 public interface GameRepository extends JpaRepository<Game, Long>{
 	
 	@Query(nativeQuery = true, value = """
@@ -19,4 +20,5 @@ public interface GameRepository extends JpaRepository<Game, Long>{
 			ORDER BY tb_belonging.position
 				""")
 	List<GameminProjection> searchByList(Long listId);
+
 }
