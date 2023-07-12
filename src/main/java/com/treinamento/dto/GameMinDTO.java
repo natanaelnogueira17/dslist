@@ -52,7 +52,6 @@ public class GameMinDTO {
 	public void setShortDescription(String shortDescription) {
 		this.shortDescription = shortDescription;
 	}
-	
-	
+		
 	
 }
